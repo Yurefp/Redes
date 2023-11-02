@@ -1,11 +1,11 @@
 import socket
 import threading
 
-HEADER = 64
-PORT = 18000
+HEADER = 64                         #Define o tamanho do cabeçalho
+PORT = 18000                        #Define a porta que o cliente irá enviar as mensagens para o servidor
 FORMAT = "utf-8"
 DISCONNECT_MESSAGE = "!DISCONNECT"
-SERVER = "10.10.11.10"
+SERVER = ""
 ADDR = (SERVER, PORT)
 
 client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
